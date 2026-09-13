@@ -1,0 +1,2255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ode SYSTEM "content.dtd">
+<ode xmlns="http://www.intef.es/xsd/ode" version="2.0">
+<userPreferences>
+  <userPreference>
+    <key>theme</key>
+    <value>nova</value>
+  </userPreference>
+</userPreferences>
+<odeResources>
+  <odeResource>
+    <key>odeId</key>
+    <value>20260905185818000384</value>
+  </odeResource>
+  <odeResource>
+    <key>odeVersionId</key>
+    <value>20260905185818000385</value>
+  </odeResource>
+  <odeResource>
+    <key>exe_version</key>
+    <value>4.0.3</value>
+  </odeResource>
+</odeResources>
+<odeProperties>
+  <odeProperty>
+    <key>pp_title</key>
+    <value>SA01 · Com sabem què va passar?</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_author</key>
+    <value>Miquel Gregori Escrivà</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_description</key>
+    <value>Situació d&apos;aprenentatge completa sobre fonts, verificació i construcció del coneixement històric.</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_lang</key>
+    <value>ca-valencia</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_theme</key>
+    <value>nova</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_exelearning_version</key>
+    <value>v4.0.3</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_modified</key>
+    <value>1789293687862</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addExeLink</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addPagination</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addSearchBox</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addAccessibilityToolbar</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_addMathJax</key>
+    <value>false</value>
+  </odeProperty>
+  <odeProperty>
+    <key>exportSource</key>
+    <value>true</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_globalFont</key>
+    <value>default</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_extraHeadContent</key>
+    <value>&lt;style&gt;
+
+:root{
+  --art-primary:#24345f;
+  --art-accent:#c69a4b;
+  --art-text:#25282d;
+  --art-muted:#667085;
+  --art-bg:#f6f7f9;
+  --art-card:#ffffff;
+  --art-border:#e4e7ec;
+}
+
+html,
+body{
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    &quot;Segoe UI&quot;,
+    Arial,
+    sans-serif !important;
+
+  color:var(--art-text);
+  background:var(--art-bg);
+  line-height:1.65;
+}
+
+/* FONT DELS TÍTOLS */
+.sa h1,
+.sa h2,
+.sa h3{
+  font-family:
+    Georgia,
+    &quot;Times New Roman&quot;,
+    serif !important;
+}
+/* =========================
+   CONTENIDOR DE LA SA
+========================= */
+
+.sa{
+  max-width:1100px;
+  margin:0 auto;
+  color:var(--art-text);
+}
+
+/* =========================
+   TÍTOLS
+========================= */
+
+.sa &gt; h1,
+.sa &gt; h2:first-child{
+  font-size:2.45rem !important;
+  line-height:1.12;
+  letter-spacing:-0.035em;
+  color:var(--art-primary) !important;
+  margin:0 0 22px;
+  font-weight:800 !important;
+}
+
+.sa h2{
+  color:var(--art-primary) !important;
+  font-size:1.8rem !important;
+  line-height:1.25;
+  font-weight:750 !important;
+  letter-spacing:-0.02em;
+}
+
+.sa h3{
+  color:var(--art-primary) !important;
+  font-size:1.32rem !important;
+  line-height:1.3;
+  font-weight:750 !important;
+  margin-top:32px;
+  margin-bottom:14px;
+}
+
+/* =========================
+   HERO / CAPÇALERA
+========================= */
+
+.hero{
+  background:linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f3f5f9 100%
+  );
+
+  border:1px solid var(--art-border);
+  border-radius:22px;
+
+  padding:32px 36px;
+  margin-bottom:22px;
+
+  box-shadow:
+    0 10px 30px rgba(16,24,40,.06);
+}
+
+.hero .small{
+  color:var(--art-accent);
+  font-size:.8rem;
+  text-transform:uppercase;
+  letter-spacing:.085em;
+  font-weight:800;
+  margin:0 0 8px;
+}
+
+.hero h2{
+  margin:.2rem 0 .7rem !important;
+}
+
+.hero p{
+  font-size:1.08rem;
+  line-height:1.65;
+  margin-bottom:0;
+}
+
+/* =========================
+   PREGUNTA GUIA / REPTE
+========================= */
+
+.repte{
+  background:#eef2f7;
+  border-left:5px solid var(--art-primary);
+
+  padding:18px 22px;
+  margin:24px 0 30px;
+
+  border-radius:0 14px 14px 0;
+
+  font-size:1.05rem;
+  line-height:1.6;
+}
+
+/* =========================
+   IDEA CLAU
+========================= */
+
+.idea-clau,
+.clau{
+  background:#fff8e9;
+  border-left:5px solid var(--art-accent);
+
+  padding:18px 22px;
+  margin:28px 0;
+
+  border-radius:0 14px 14px 0;
+}
+
+/* =========================
+   IMATGES
+========================= */
+
+.image-slot{
+  margin:28px 0 38px;
+}
+
+.image-slot img{
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+
+  display:block;
+  margin:0 auto;
+
+  border-radius:18px;
+
+  box-shadow:
+    0 12px 30px rgba(16,24,40,.12);
+}
+
+/* =========================
+   RUTA D&apos;APRENENTATGE
+========================= */
+
+.route{
+  counter-reset:pas;
+  list-style:none;
+  padding:0;
+  margin:20px 0 36px;
+}
+
+.route li{
+  counter-increment:pas;
+
+  position:relative;
+
+  padding:14px 16px 14px 54px;
+  margin-bottom:10px;
+
+  background:#ffffff;
+  border:1px solid var(--art-border);
+  border-radius:12px;
+
+  box-shadow:
+    0 3px 10px rgba(16,24,40,.03);
+}
+
+.route li::before{
+  content:counter(pas);
+
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+
+  width:28px;
+  height:28px;
+
+  border-radius:50%;
+
+  background:var(--art-primary);
+  color:#ffffff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:.82rem;
+  font-weight:800;
+}
+
+/* =========================
+   TARGETES
+========================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+
+  margin:18px 0 30px;
+}
+
+.card{
+  background:var(--art-card);
+
+  border:1px solid var(--art-border);
+  border-radius:18px;
+
+  padding:24px;
+
+  box-shadow:
+    0 6px 20px rgba(16,24,40,.05);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 10px 28px rgba(16,24,40,.09);
+}
+
+.card .icon{
+  font-size:2rem;
+  line-height:1;
+  margin-bottom:12px;
+}
+
+.card h3{
+  margin-top:0 !important;
+  margin-bottom:8px !important;
+}
+
+/* =========================
+   BOTONS
+========================= */
+
+.btn{
+  display:inline-block;
+
+  background:var(--art-primary);
+  color:#ffffff !important;
+
+  text-decoration:none !important;
+
+  font-weight:750;
+
+  padding:13px 20px;
+
+  border-radius:10px;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(36,52,95,.22);
+}
+
+/* =========================
+   IDEVICES
+========================= */
+
+.iDevice_wrapper{
+  border-radius:18px !important;
+  overflow:hidden;
+
+  margin:1.7rem 0 !important;
+
+  box-shadow:
+    0 5px 20px rgba(16,24,40,.05);
+}
+
+.iDevice_content{
+  line-height:1.65;
+}
+
+/* =========================
+   TAULES
+========================= */
+
+table{
+  width:100%;
+
+  border-collapse:separate;
+  border-spacing:0;
+
+  background:#ffffff;
+
+  border-radius:12px;
+  overflow:hidden;
+}
+
+th{
+  background:var(--art-primary);
+  color:#ffffff;
+
+  font-weight:700;
+}
+
+th,
+td{
+  padding:.85rem 1rem;
+
+  border-bottom:
+    1px solid var(--art-border);
+}
+
+/* =========================
+   ENLLAÇOS
+========================= */
+
+.sa a:not(.btn){
+  color:#345a91;
+  text-decoration-thickness:2px;
+  text-underline-offset:3px;
+}
+
+/* =========================
+   DESPLEGABLES HTML
+========================= */
+
+details{
+  background:#ffffff;
+
+  border:1px solid var(--art-border);
+  border-radius:12px;
+
+  margin:14px 0;
+  overflow:hidden;
+}
+
+details summary{
+  cursor:pointer;
+
+  padding:14px 18px;
+
+  font-weight:750;
+  color:var(--art-primary);
+}
+
+details &gt; *:not(summary){
+  margin-left:18px;
+  margin-right:18px;
+}
+
+/* =========================
+   FEEDBACK ACTIVITATS
+========================= */
+
+.feedback{
+  margin-top:12px;
+  padding:12px 15px;
+
+  border-radius:10px;
+
+  font-weight:650;
+}
+
+.feedback.ok{
+  background:#edf8f1;
+  border-left:4px solid #3d8b5a;
+}
+
+.feedback.ko{
+  background:#fff2f0;
+  border-left:4px solid #c9534d;
+}
+
+/* =========================
+   PEU DE PÀGINA
+========================= */
+
+.peu-exe{
+  margin-top:60px;
+
+  padding:24px 30px;
+
+  background:var(--art-primary);
+  color:#ffffff;
+
+  border-top:4px solid var(--art-accent);
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+
+  font-size:.88rem;
+  line-height:1.5;
+}
+
+.peu-dreta{
+  text-align:right;
+  opacity:.85;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:760px){
+
+  .sa{
+    padding-left:4px;
+    padding-right:4px;
+  }
+
+  .sa &gt; h1,
+  .sa &gt; h2:first-child{
+    font-size:1.95rem !important;
+  }
+
+  .hero{
+    padding:24px 22px;
+    border-radius:16px;
+  }
+
+  .hero h2{
+    font-size:1.5rem !important;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .route li{
+    padding-left:50px;
+  }
+
+  .peu-exe{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .peu-dreta{
+    text-align:left;
+  }
+
+}
+
+/* =========================
+   ACCESSIBILITAT
+========================= */
+
+a:focus,
+button:focus,
+summary:focus{
+  outline:3px solid rgba(198,154,75,.45);
+  outline-offset:3px;
+}
+
+/* =========================
+   IMPRESSIÓ
+========================= */
+
+@media print{
+
+  .card,
+  .hero,
+  .repte,
+  .clau,
+  .idea-clau{
+    box-shadow:none !important;
+  }
+
+  .btn{
+    background:none !important;
+    color:#000 !important;
+    border:1px solid #000;
+  }
+/* DESPLEGABLES MILLORATS */
+details{
+  background:#ffffff;
+  border:1px solid var(--art-border);
+  border-radius:16px;
+  margin:22px 0;
+  overflow:hidden;
+
+  box-shadow:
+    0 6px 18px rgba(16,24,40,.05);
+
+  transition:
+    box-shadow .2s ease,
+    transform .2s ease;
+}
+
+details:hover{
+  box-shadow:
+    0 10px 24px rgba(16,24,40,.08);
+}
+
+/* Capçalera del desplegable */
+details summary{
+  position:relative;
+  cursor:pointer;
+
+  padding:17px 52px 17px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f7f8fb 0%,
+      #eef2f7 100%
+    );
+
+  color:var(--art-primary);
+
+  font-weight:800;
+  font-size:1.05rem;
+
+  list-style:none;
+
+  user-select:none;
+}
+
+/* Elimina el triangle predeterminat */
+details summary::-webkit-details-marker{
+  display:none;
+}
+
+details summary::marker{
+  display:none;
+}
+
+/* Fletxa pròpia */
+details summary::after{
+  content:&quot;⌄&quot;;
+
+  position:absolute;
+  right:20px;
+  top:50%;
+
+  transform:
+    translateY(-50%)
+    rotate(0deg);
+
+  font-size:1.35rem;
+  color:var(--art-accent);
+
+  transition:transform .25s ease;
+}
+
+/* Quan està obert */
+details[open] summary::after{
+  transform:
+    translateY(-50%)
+    rotate(180deg);
+}
+
+/* Línia inferior quan està obert */
+details[open] summary{
+  border-bottom:1px solid var(--art-border);
+}
+
+/* Contingut interior */
+details &gt; *:not(summary){
+  margin-left:20px;
+  margin-right:20px;
+}
+
+/* Taula dins del desplegable */
+details table{
+  width:calc(100% - 40px) !important;
+  margin:20px auto 22px !important;
+}
+
+/* Animació visual suau */
+details[open]{
+  animation:detailsOpen .18s ease-out;
+}
+
+@keyframes detailsOpen{
+  from{
+    opacity:.85;
+    transform:translateY(-2px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+/* TAULA ADAPTADA A L&apos;AMPLÀRIA */
+.responsive-table{
+  width:100% !important;
+  max-width:100% !important;
+  table-layout:auto !important;
+  border-collapse:collapse;
+}
+
+.responsive-table th,
+.responsive-table td{
+  height:auto !important;
+  white-space:normal !important;
+  overflow-wrap:anywhere;
+  vertical-align:top;
+}
+
+/* Primera columna més estreta */
+.responsive-table th:first-child,
+.responsive-table td:first-child{
+  width:22%;
+}
+
+/* Segona columna aprofita la resta */
+.responsive-table th:nth-child(2),
+.responsive-table td:nth-child(2){
+  width:78%;
+}
+
+/* Mòbil */
+@media(max-width:700px){
+  .responsive-table{
+    font-size:.92rem;
+  }
+
+  .responsive-table th,
+  .responsive-table td{
+    padding:10px 8px;
+  }
+.table-responsive{
+  width:100%;
+  max-width:100%;
+  overflow-x:auto;
+}
+
+.art-table{
+  width:100% !important;
+  max-width:100% !important;
+  table-layout:fixed;
+  border-collapse:collapse;
+  margin:0 !important;
+}
+
+.art-table th,
+.art-table td{
+  white-space:normal !important;
+  overflow-wrap:anywhere;
+  word-break:normal;
+  vertical-align:top;
+  padding:14px 16px;
+}
+
+/* Repartiment de l&apos;ample */
+.art-table th:nth-child(1),
+.art-table td:nth-child(1){
+  width:28%;
+}
+
+.art-table th:nth-child(2),
+.art-table td:nth-child(2){
+  width:44%;
+}
+
+.art-table th:nth-child(3),
+.art-table td:nth-child(3){
+  width:28%;
+}
+}
+&lt;/style&gt;
+</value>
+  </odeProperty>
+  <odeProperty>
+    <key>footer</key>
+    <value>&lt;footer class=&quot;peu-exe&quot;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;IES Gregori Maians · Oliva&lt;/strong&gt;&lt;br&gt;
+    Història del Món Contemporani · 1r de Batxillerat · Curs 2026–2027
+  &lt;/div&gt;
+
+  &lt;div class=&quot;peu-dreta&quot;&gt;
+    Miquel Gregori Escrivà&lt;br&gt;
+    CC BY-NC-SA 4.0
+  &lt;/div&gt;
+&lt;/footer&gt;</value>
+  </odeProperty>
+  <odeProperty>
+    <key>pp_screenshot</key>
+    <value>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAIAAABAH0oBAABNZ0lEQVR4nO3dd5yU1d034NmFZSlLR4r03hEQkaKoYG+xJ2psMdFETUyiUWN9NJZoNBpj7IklsZdo7KKgKCAgTZp0pEhnKcuyu+zuvH9sHl4e2HLv7myBc12f/DHMnDnnd8+Mm/nOfe5zkua90iMGAAAA+7vkqi4AAAAAKoMADAAAQBAEYAAAAIIgAAMAABAEARgAAIAgCMAAAAAEQQAGAAAgCAIwAAAAQRCAAQAACIIADAAAQBAEYAAAAIIgAAMAABAEARgAAIAgCMAAAAAEQQAGAAAgCAIwAAAAQRCAAQAACELSBYNuqOoaAAAAoMI5AwwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCkLRja05V1wAAAAAVzhlgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIggAMAABAEARgAAAAgiAAAwAAEAQBGAAAgCAIwAAAAARBAAYAACAIAjAAAABBEIABAAAIQs2qLgD2tH7Nxmsv+sOaVeuLavCrW39y0jmjKrOkamjCp1/ffvWDRT3aqEmDPz17c7tOrSuzJAAAqOacAabaOaBl0z89c3PzVk2LavD4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IAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAgCMAAAAEEQgAEAAAiCAAwAAEAQBGAAAACCIAADAAAQBAEYAACAIAjAAAAABEEABgAAIAj/D++Go8uNrGNNAAAAAElFTkSuQmCC</value>
+  </odeProperty>
+</odeProperties>
+<odeNavStructures>
+<odeNavStructure>
+  <odePageId>20260905185818000001</odePageId>
+  <odeParentPageId></odeParentPageId>
+  <pageName>Inici</pageName>
+  <odeNavStructureOrder>0</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Inici</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Inici</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>20260905185818000001</odePageId>
+      <odeBlockId>202609051858180000C9</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>20260905185818000001</odePageId>
+          <odeBlockId>202609051858180000C9</odeBlockId>
+          <odeIdeviceId>2026090518581800012D</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<section class="hero"><p class="small">IES Gregori Maians · Història del Món Contemporani · 1r de Batxillerat</p>
+<h2>SA01 · Com sabem què va passar?</h2><p><strong>Repte:</strong> elaborar i defensar un dossier històric breu que responga una pregunta investigable mitjançant fonts contrastades.</p>
+<div class="meta"><span class="tag">8 sessions</span><span class="tag">Treball amb fonts</span><span class="tag">Lectura lateral</span><span class="tag">Escriptura històrica</span></div></section>
+<div class="repte"><strong>Pregunta guia:</strong> si dues persones expliquen el mateix passat de manera diferent, com podem construir una explicació històrica fiable?</div>
+<h3>Ruta d’aprenentatge</h3><ol class="route"><li>Distingir fet, font i interpretació.</li><li>Analitzar fonts de tipus diferents.</li><li>Verificar abans de compartir.</li><li>Transformar un tema en pregunta.</li><li>Contrastar i contextualitzar.</li><li>Escriure una explicació amb proves.</li><li>Revisar el dossier entre iguals.</li><li>Defensar conclusions provisionals.</li></ol>
+<h3>Producte final</h3><p>Dossier individual de 800–1.000 paraules, amb pregunta, hipòtesi, almenys quatre fonts de dos tipus diferents, cites, contrast, conclusió i límits; defensa oral de 90 segons.</p>
+<div class="clau"><strong>Abans de començar:</strong> crea una carpeta de treball i conserva sempre l’enllaç, autoria, data i procedència de cada font.</div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"2026090518581800012D","textTextarea":"<div class=\"sa\">\n<section class=\"hero\"><p class=\"small\">IES Gregori Maians · Història del Món Contemporani · 1r de Batxillerat</p>\n<h2>SA01 · Com sabem què va passar?</h2><p><strong>Repte:</strong> elaborar i defensar un dossier històric breu que responga una pregunta investigable mitjançant fonts contrastades.</p>\n<div class=\"meta\"><span class=\"tag\">8 sessions</span><span class=\"tag\">Treball amb fonts</span><span class=\"tag\">Lectura lateral</span><span class=\"tag\">Escriptura històrica</span></div></section>\n<div class=\"repte\"><strong>Pregunta guia:</strong> si dues persones expliquen el mateix passat de manera diferent, com podem construir una explicació històrica fiable?</div>\n<h3>Ruta d’aprenentatge</h3><ol class=\"route\"><li>Distingir fet, font i interpretació.</li><li>Analitzar fonts de tipus diferents.</li><li>Verificar abans de compartir.</li><li>Transformar un tema en pregunta.</li><li>Contrastar i contextualitzar.</li><li>Escriure una explicació amb proves.</li><li>Revisar el dossier entre iguals.</li><li>Defensar conclusions provisionals.</li></ol>\n<h3>Producte final</h3><p>Dossier individual de 800–1.000 paraules, amb pregunta, hipòtesi, almenys quatre fonts de dos tipus diferents, cites, contrast, conclusió i límits; defensa oral de 90 segons.</p>\n<div class=\"clau\"><strong>Abans de començar:</strong> crea una carpeta de treball i conserva sempre l’enllaç, autoria, data i procedència de cada font.</div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>20260905185818000066</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>1. Un mateix passat, dos relats</pageName>
+  <odeNavStructureOrder>0</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>1. Un mateix passat, dos relats</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>1. Un mateix passat, dos relats</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>20260905185818000066</odePageId>
+      <odeBlockId>202609051858180000CA</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>20260905185818000066</odePageId>
+          <odeBlockId>202609051858180000CA</odeBlockId>
+          <odeIdeviceId>2026090518581800012E</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="meta"><span class="tag">Sessió 1</span><span class="tag">Activació i diagnòstic</span><span class="tag">55 minuts</span></div><h2>Un mateix passat, dos relats</h2>
+<div class="repte"><strong>Objectiu:</strong> diferenciar fet, font, opinió i interpretació, i formular una primera pregunta investigable.</div>
+<h3>1. Observa i pensa (8 min)</h3><div class="grid"><div class="card"><h3>Publicació A</h3><p>«La protesta de la plaça va ser espontània: centenars de persones s’uniren per reclamar millores laborals.»</p></div><div class="card"><h3>Publicació B</h3><p>«La concentració va ser organitzada per un grup reduït i va interrompre l’activitat normal de la ciutat.»</p></div></div>
+<p>Rutina individual: <strong>veig – pense – em pregunte</strong>. Després compara les respostes amb una parella.</p><div class="fitxa print"><p><strong>VEIG:</strong> dades observables, sense explicar-les.</p><span class="linia"></span><span class="linia"></span><p><strong>PENSE:</strong> interpretació provisional.</p><span class="linia"></span><span class="linia"></span><p><strong>EM PREGUNTE:</strong> què necessite investigar?</p><span class="linia"></span><span class="linia"></span></div>
+<h3>2. Classifica (15 min)</h3><table><tr><th>Enunciat</th><th>Fet / opinió / interpretació / pregunta</th><th>Justificació</th></tr><tr><td>La publicació A afirma que hi havia centenars de persones.</td><td></td><td></td></tr><tr><td>La protesta va ser injusta.</td><td></td><td></td></tr><tr><td>Els dos relats seleccionen aspectes diferents.</td><td></td><td></td></tr><tr><td>Qui va convocar la concentració?</td><td></td><td></td></tr></table>
+<h3>3. El repte de la SA (20 min)</h3><p>Completa: «Vull investigar __________ perquè les fonts discrepen sobre __________. Necessitaré comprovar __________.»</p>
+<div class="quiz" id="q1"><p><strong>Quina afirmació és més rigorosa?</strong></p><label><input type="radio" name="q1" value="0"> Una font és el mateix que un fet.</label><label><input type="radio" name="q1" value="1"> Una interpretació ha d&#x27;explicar-se amb proves i pot revisar-se.</label><label><input type="radio" name="q1" value="2"> Si dues fonts discrepen, una sempre és falsa.</label>
+    <button type="button" onclick="comprova('q1','1')">Comprova</button>
+    <button type="button" onclick="mostra('q1exp')">Explicació</button><p class="feedback" aria-live="polite"></p>
+    <p id="q1exp" hidden>La història construeix explicacions argumentades i revisables a partir de fonts.</p></div>
+<div class="clau"><strong>Ticket d’eixida:</strong> escriu una diferència entre font i interpretació i una pregunta investigable.</div><p><a class="btn" href="{{context_path}}/content/resources/SA01_Sessio_1_Material_alumnat.pdf">Descarrega el full de la sessió 1 (PDF)</a></p></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"2026090518581800012E","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 1</span><span class=\"tag\">Activació i diagnòstic</span><span class=\"tag\">55 minuts</span></div><h2>Un mateix passat, dos relats</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> diferenciar fet, font, opinió i interpretació, i formular una primera pregunta investigable.</div>\n<h3>1. Observa i pensa (8 min)</h3><div class=\"grid\"><div class=\"card\"><h3>Publicació A</h3><p>«La protesta de la plaça va ser espontània: centenars de persones s’uniren per reclamar millores laborals.»</p></div><div class=\"card\"><h3>Publicació B</h3><p>«La concentració va ser organitzada per un grup reduït i va interrompre l’activitat normal de la ciutat.»</p></div></div>\n<p>Rutina individual: <strong>veig – pense – em pregunte</strong>. Després compara les respostes amb una parella.</p><div class=\"fitxa print\"><p><strong>VEIG:</strong> dades observables, sense explicar-les.</p><span class=\"linia\"></span><span class=\"linia\"></span><p><strong>PENSE:</strong> interpretació provisional.</p><span class=\"linia\"></span><span class=\"linia\"></span><p><strong>EM PREGUNTE:</strong> què necessite investigar?</p><span class=\"linia\"></span><span class=\"linia\"></span></div>\n<h3>2. Classifica (15 min)</h3><table><tr><th>Enunciat</th><th>Fet / opinió / interpretació / pregunta</th><th>Justificació</th></tr><tr><td>La publicació A afirma que hi havia centenars de persones.</td><td></td><td></td></tr><tr><td>La protesta va ser injusta.</td><td></td><td></td></tr><tr><td>Els dos relats seleccionen aspectes diferents.</td><td></td><td></td></tr><tr><td>Qui va convocar la concentració?</td><td></td><td></td></tr></table>\n<h3>3. El repte de la SA (20 min)</h3><p>Completa: «Vull investigar __________ perquè les fonts discrepen sobre __________. Necessitaré comprovar __________.»</p>\n<div class=\"quiz\" id=\"q1\"><p><strong>Quina afirmació és més rigorosa?</strong></p><label><input type=\"radio\" name=\"q1\" value=\"0\"> Una font és el mateix que un fet.</label><label><input type=\"radio\" name=\"q1\" value=\"1\"> Una interpretació ha d&#x27;explicar-se amb proves i pot revisar-se.</label><label><input type=\"radio\" name=\"q1\" value=\"2\"> Si dues fonts discrepen, una sempre és falsa.</label>\n    <button type=\"button\" onclick=\"comprova('q1','1')\">Comprova</button>\n    <button type=\"button\" onclick=\"mostra('q1exp')\">Explicació</button><p class=\"feedback\" aria-live=\"polite\"></p>\n    <p id=\"q1exp\" hidden>La història construeix explicacions argumentades i revisables a partir de fonts.</p></div>\n<div class=\"clau\"><strong>Ticket d’eixida:</strong> escriu una diferència entre font i interpretació i una pregunta investigable.</div><p><a class=\"btn\" href=\"{{context_path}}/content/resources/SA01_Sessio_1_Material_alumnat.pdf\">Descarrega el full de la sessió 1 (PDF)</a></p></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+    <odePagStructure>
+      <odePageId>20260905185818000066</odePageId>
+      <odeBlockId>block-mtzn4wv1-wriw40rks</odeBlockId>
+      <blockName>Galeria d&apos;imatges</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>20260905185818000066</odePageId>
+          <odeBlockId>block-mtzn4wv1-wriw40rks</odeBlockId>
+          <odeIdeviceId>idevice-1789293474395-0cjx5zet6</odeIdeviceId>
+          <odeIdeviceTypeName>image-gallery</odeIdeviceTypeName>
+          <htmlView><![CDATA[<!-- Idevice Example template start -->
+<div class="exe-image-gallery-template">
+  <!-- Idevice content start -->
+  
+            <div class="imageGallery-IDevice">
+                <div class="imageGallery-body"><div id="imageContainer_0" class="imageContainer"> <a idevice-id="idevice-1789293474395-0cjx5zet6" title="" href="{{context_path}}/content/resources/3. Diari 2.png" class="imageLink">  <div class="imageElement">   <img src="{{context_path}}/content/resources/3. Diari 2.png" height="128" width="128" title="" alt="" titlelink="" author="" authorlink="" license="" licenselink=""/>  </div> </a></div><div id="imageContainer_1" class="imageContainer"> <a idevice-id="idevice-1789293474395-0cjx5zet6" title="" href="{{context_path}}/content/resources/2. Diari 1.png" class="imageLink">  <div class="imageElement">   <img src="{{context_path}}/content/resources/2. Diari 1.png" height="128" width="128" title="" alt="" titlelink="" author="" authorlink="" license="" licenselink=""/>  </div> </a></div>
+                </div>
+            </div>
+  <!-- Idevice content end -->
+</div>
+<!-- Idevice Example template end -->]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1789293474395-0cjx5zet6","img_1":{"img":"{{context_path}}/content/resources/3. Diari 2.png","thumbnail":"{{context_path}}/content/resources/3. Diari 2.png","title":"","linktitle":"","author":"","linkauthor":"","license":""},"img_2":{"img":"{{context_path}}/content/resources/2. Diari 1.png","thumbnail":"{{context_path}}/content/resources/2. Diari 1.png","title":"","linktitle":"","author":"","linkauthor":"","license":""}}]]></jsonProperties>
+          <odeComponentsOrder>0</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>20260905185818000067</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>2. El laboratori de fonts</pageName>
+  <odeNavStructureOrder>1</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>2. El laboratori de fonts</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>2. El laboratori de fonts</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>20260905185818000067</odePageId>
+      <odeBlockId>202609051858180000CB</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>20260905185818000067</odePageId>
+          <odeBlockId>202609051858180000CB</odeBlockId>
+          <odeIdeviceId>2026090518581800012F</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <div class="sa">
+<div class="meta"><span class="tag">Sessió 2</span><span class="tag">Modelatge i taller</span><span class="tag">Equips de 4</span></div>
+<h2>El laboratori de fonts</h2>
+<div class="repte"><strong>Objectiu:</strong> analitzar fonts textuals, estadístiques, visuals i orals amb la pauta AUTOR–DATA–CONTEXT–CONTINGUT–FINALITAT–UTILITAT–LÍMITS.</div>
+<h3>Pauta comuna</h3>
+<table>
+<tbody>
+<tr>
+<th>Pas</th>
+<th>Pregunta</th>
+</tr>
+<tr>
+<td>AUTOR</td>
+<td>Qui crea la font i des de quina posició?</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td>Quan es crea? És contemporània o posterior?</td>
+</tr>
+<tr>
+<td>CONTEXT</td>
+<td>Què passa en aquell lloc i moment?</td>
+</tr>
+<tr>
+<td>CONTINGUT</td>
+<td>Què diu o mostra exactament?</td>
+</tr>
+<tr>
+<td>FINALITAT</td>
+<td>Per què es crea i a qui s’adreça?</td>
+</tr>
+<tr>
+<td>UTILITAT</td>
+<td>Per a quina pregunta concreta serveix?</td>
+</tr>
+<tr>
+<td>LÍMITS</td>
+<td>Què no permet saber? Què falta?</td>
+</tr>
+</tbody>
+</table>
+<div class="alerta"><strong>Regla d’or:</strong> cap font és útil o inútil en abstracte; depén de la pregunta.</div>
+<h3>Estacions</h3>
+<details>
+<summary>A · Reglament de fàbrica, 1884 (simulat)</summary>
+<div class="font">La jornada començarà a les sis i finalitzarà a les set, amb una hora total de descans. Les absències sense autorització comportaran la pèrdua del jornal. Es prohibeix parlar durant el funcionament de les màquines. Els menors obeiran el cap de sala.</div>
+</details><details>
+<summary>B · Registre laboral, 1882–1892 (dades simulades)</summary>
+<table>
+<tbody>
+<tr>
+<th>Any</th>
+<th>Treballadors</th>
+<th>Dones</th>
+<th>Menors</th>
+<th>Jornada</th>
+<th>Accidents</th>
+</tr>
+<tr>
+<td>1882</td>
+<td>420</td>
+<td>34%</td>
+<td>18%</td>
+<td>12,5 h</td>
+<td>31</td>
+</tr>
+<tr>
+<td>1887</td>
+<td>510</td>
+<td>38%</td>
+<td>14%</td>
+<td>11,8 h</td>
+<td>27</td>
+</tr>
+<tr>
+<td>1892</td>
+<td>640</td>
+<td>41%</td>
+<td>9%</td>
+<td>10,9 h</td>
+<td>19</td>
+</tr>
+</tbody>
+</table>
+</details><details>
+<summary>C · Cartell empresarial, 1892 (simulat)</summary>
+<p><img src="{{context_path}}/content/resources/ChatGPT Image 11 set. 2026, 17_19_07.png" width="1280" height="720" alt="" /><br /></p>
+<p>Descriu primer; interpreta després. Fixa’t també en allò que el cartell silencia.</p>
+</details><details>
+<summary>D · Testimoni oral retrospectiu, 1935 (simulat)</summary>
+<div class="font">«Vaig entrar a la fàbrica amb onze anys. Recorde el soroll, la calor i la por quan s’aturava una màquina. A casa necessitàvem el jornal. Amb els anys, la jornada es va fer més curta, però no tots els encarregats respectaven les normes.»</div>
+</details>
+<div class="quiz" id="q2">
+<p><strong>Per estudiar l'experiència emocional d'una treballadora, quina font és inicialment més directa?</strong></p>
+<label><input type="radio" name="q2" value="0" /> El registre estadístic</label><label><input type="radio" name="q2" value="1" /> El testimoni oral</label><label><input type="radio" name="q2" value="2" /> El cartell empresarial</label> <button type="button" onclick="comprova('q2','1')">Comprova</button> <button type="button" onclick="mostra('q2exp')">Explicació</button>
+<p class="feedback" aria-live="polite"><br /></p>
+<p id="q2exp" hidden="">El testimoni aporta memòria i experiència, però cal contrastar-lo perquè és retrospectiu.</p>
+</div>
+<p><a class="btn" href="{{context_path}}/content/resources/SA01_Sessions_2_i_3_Material_alumnat.pdf">Fitxes imprimibles de les sessions 2 i 3 (PDF)</a></p>
+</div>
+<p>
+<script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script>
+</p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"2026090518581800012F","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 2</span><span class=\"tag\">Modelatge i taller</span><span class=\"tag\">Equips de 4</span></div>\n<h2>El laboratori de fonts</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> analitzar fonts textuals, estadístiques, visuals i orals amb la pauta AUTOR–DATA–CONTEXT–CONTINGUT–FINALITAT–UTILITAT–LÍMITS.</div>\n<h3>Pauta comuna</h3>\n<table>\n<tbody>\n<tr>\n<th>Pas</th>\n<th>Pregunta</th>\n</tr>\n<tr>\n<td>AUTOR</td>\n<td>Qui crea la font i des de quina posició?</td>\n</tr>\n<tr>\n<td>DATA</td>\n<td>Quan es crea? És contemporània o posterior?</td>\n</tr>\n<tr>\n<td>CONTEXT</td>\n<td>Què passa en aquell lloc i moment?</td>\n</tr>\n<tr>\n<td>CONTINGUT</td>\n<td>Què diu o mostra exactament?</td>\n</tr>\n<tr>\n<td>FINALITAT</td>\n<td>Per què es crea i a qui s’adreça?</td>\n</tr>\n<tr>\n<td>UTILITAT</td>\n<td>Per a quina pregunta concreta serveix?</td>\n</tr>\n<tr>\n<td>LÍMITS</td>\n<td>Què no permet saber? Què falta?</td>\n</tr>\n</tbody>\n</table>\n<div class=\"alerta\"><strong>Regla d’or:</strong> cap font és útil o inútil en abstracte; depén de la pregunta.</div>\n<h3>Estacions</h3>\n<details>\n<summary>A · Reglament de fàbrica, 1884 (simulat)</summary>\n<div class=\"font\">La jornada començarà a les sis i finalitzarà a les set, amb una hora total de descans. Les absències sense autorització comportaran la pèrdua del jornal. Es prohibeix parlar durant el funcionament de les màquines. Els menors obeiran el cap de sala.</div>\n</details><details>\n<summary>B · Registre laboral, 1882–1892 (dades simulades)</summary>\n<table>\n<tbody>\n<tr>\n<th>Any</th>\n<th>Treballadors</th>\n<th>Dones</th>\n<th>Menors</th>\n<th>Jornada</th>\n<th>Accidents</th>\n</tr>\n<tr>\n<td>1882</td>\n<td>420</td>\n<td>34%</td>\n<td>18%</td>\n<td>12,5 h</td>\n<td>31</td>\n</tr>\n<tr>\n<td>1887</td>\n<td>510</td>\n<td>38%</td>\n<td>14%</td>\n<td>11,8 h</td>\n<td>27</td>\n</tr>\n<tr>\n<td>1892</td>\n<td>640</td>\n<td>41%</td>\n<td>9%</td>\n<td>10,9 h</td>\n<td>19</td>\n</tr>\n</tbody>\n</table>\n</details><details>\n<summary>C · Cartell empresarial, 1892 (simulat)</summary>\n<p><img src=\"{{context_path}}/content/resources/ChatGPT Image 11 set. 2026, 17_19_07.png\" width=\"1280\" height=\"720\" alt=\"\" /><br /></p>\n<p>Descriu primer; interpreta després. Fixa’t també en allò que el cartell silencia.</p>\n</details><details>\n<summary>D · Testimoni oral retrospectiu, 1935 (simulat)</summary>\n<div class=\"font\">«Vaig entrar a la fàbrica amb onze anys. Recorde el soroll, la calor i la por quan s’aturava una màquina. A casa necessitàvem el jornal. Amb els anys, la jornada es va fer més curta, però no tots els encarregats respectaven les normes.»</div>\n</details>\n<div class=\"quiz\" id=\"q2\">\n<p><strong>Per estudiar l'experiència emocional d'una treballadora, quina font és inicialment més directa?</strong></p>\n<label><input type=\"radio\" name=\"q2\" value=\"0\" /> El registre estadístic</label><label><input type=\"radio\" name=\"q2\" value=\"1\" /> El testimoni oral</label><label><input type=\"radio\" name=\"q2\" value=\"2\" /> El cartell empresarial</label> <button type=\"button\" onclick=\"comprova('q2','1')\">Comprova</button> <button type=\"button\" onclick=\"mostra('q2exp')\">Explicació</button>\n<p class=\"feedback\" aria-live=\"polite\"><br /></p>\n<p id=\"q2exp\" hidden=\"\">El testimoni aporta memòria i experiència, però cal contrastar-lo perquè és retrospectiu.</p>\n</div>\n<p><a class=\"btn\" href=\"{{context_path}}/content/resources/SA01_Sessions_2_i_3_Material_alumnat.pdf\">Fitxes imprimibles de les sessions 2 i 3 (PDF)</a></p>\n</div>\n<p>\n<script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>\n</p>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>20260905185818000068</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>3. Verificar abans de compartir</pageName>
+  <odeNavStructureOrder>2</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>3. Verificar abans de compartir</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>3. Verificar abans de compartir</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>20260905185818000068</odePageId>
+      <odeBlockId>202609051858180000CC</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>20260905185818000068</odePageId>
+          <odeBlockId>202609051858180000CC</odeBlockId>
+          <odeIdeviceId>20260905185818000130</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="meta"><span class="tag">Sessió 3</span><span class="tag">Alfabetització digital</span><span class="tag">Parelles</span></div><h2>Verificar abans de compartir</h2>
+<div class="repte"><strong>Objectiu:</strong> practicar la lectura lateral i formular veredictes proporcionals a les proves.</div>
+<h3>Protocol SALTA</h3><table><tr><th>Pas</th><th>Acció</th></tr><tr><td>S · Surt</td><td>Ix de la pàgina i consulta què diuen altres fonts.</td></tr><tr><td>A · Autoria</td><td>Investiga qui publica, competència, interessos i historial.</td></tr><tr><td>L · Localitza</td><td>Troba la cita, imatge, document o dades originals.</td></tr><tr><td>T · Triangula</td><td>Contrasta amb dues fonts independents i fiables.</td></tr><tr><td>A · Aporta</td><td>Redacta un veredicte provisional amb prova i límits.</td></tr></table>
+<h3>Microcasos</h3><details><summary>1. Cita atribuïda</summary><p>Una publicació afirma: «Napoleó va dir el 1815: “Qui controla el passat controla el futur”». No indica obra, discurs, carta ni arxiu.</p></details><details><summary>2. Imatge fora de context</summary><p>Un compte comparteix el cartell de Riverton com una «fotografia original d’una fàbrica de 1850». La peça porta la data 1892 i és un cartell promocional.</p></details><details><summary>3. Estadística exagerada</summary><p>Un titular afirma que una llei va eliminar completament el treball infantil abans de 1892. El registre mostra un descens del 18% al 9%, però no una desaparició ni la causa del canvi.</p></details>
+<div class="fitxa"><p><strong>Veredicte:</strong> verificat / fals / enganyós / no verificat.</p><p><strong>Prova decisiva:</strong></p><span class="linia"></span><span class="linia"></span><p><strong>Què queda obert?</strong></p><span class="linia"></span></div>
+<div class="quiz" id="q3"><p><strong>Si no localitzes la font original d&#x27;una cita, quin veredicte és més responsable?</strong></p><label><input type="radio" name="q3" value="0"> Falsa, sense dubte</label><label><input type="radio" name="q3" value="1"> No verificada o d&#x27;atribució dubtosa</label><label><input type="radio" name="q3" value="2"> Vertadera si apareix moltes vegades</label>
+    <button type="button" onclick="comprova('q3','1')">Comprova</button>
+    <button type="button" onclick="mostra('q3exp')">Explicació</button><p class="feedback" aria-live="polite"></p>
+    <p id="q3exp" hidden>L&#x27;absència de font original impedeix confirmar-la, però no sempre permet demostrar que siga falsa.</p></div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000130","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 3</span><span class=\"tag\">Alfabetització digital</span><span class=\"tag\">Parelles</span></div><h2>Verificar abans de compartir</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> practicar la lectura lateral i formular veredictes proporcionals a les proves.</div>\n<h3>Protocol SALTA</h3><table><tr><th>Pas</th><th>Acció</th></tr><tr><td>S · Surt</td><td>Ix de la pàgina i consulta què diuen altres fonts.</td></tr><tr><td>A · Autoria</td><td>Investiga qui publica, competència, interessos i historial.</td></tr><tr><td>L · Localitza</td><td>Troba la cita, imatge, document o dades originals.</td></tr><tr><td>T · Triangula</td><td>Contrasta amb dues fonts independents i fiables.</td></tr><tr><td>A · Aporta</td><td>Redacta un veredicte provisional amb prova i límits.</td></tr></table>\n<h3>Microcasos</h3><details><summary>1. Cita atribuïda</summary><p>Una publicació afirma: «Napoleó va dir el 1815: “Qui controla el passat controla el futur”». No indica obra, discurs, carta ni arxiu.</p></details><details><summary>2. Imatge fora de context</summary><p>Un compte comparteix el cartell de Riverton com una «fotografia original d’una fàbrica de 1850». La peça porta la data 1892 i és un cartell promocional.</p></details><details><summary>3. Estadística exagerada</summary><p>Un titular afirma que una llei va eliminar completament el treball infantil abans de 1892. El registre mostra un descens del 18% al 9%, però no una desaparició ni la causa del canvi.</p></details>\n<div class=\"fitxa\"><p><strong>Veredicte:</strong> verificat / fals / enganyós / no verificat.</p><p><strong>Prova decisiva:</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><p><strong>Què queda obert?</strong></p><span class=\"linia\"></span></div>\n<div class=\"quiz\" id=\"q3\"><p><strong>Si no localitzes la font original d&#x27;una cita, quin veredicte és més responsable?</strong></p><label><input type=\"radio\" name=\"q3\" value=\"0\"> Falsa, sense dubte</label><label><input type=\"radio\" name=\"q3\" value=\"1\"> No verificada o d&#x27;atribució dubtosa</label><label><input type=\"radio\" name=\"q3\" value=\"2\"> Vertadera si apareix moltes vegades</label>\n    <button type=\"button\" onclick=\"comprova('q3','1')\">Comprova</button>\n    <button type=\"button\" onclick=\"mostra('q3exp')\">Explicació</button><p class=\"feedback\" aria-live=\"polite\"></p>\n    <p id=\"q3exp\" hidden>L&#x27;absència de font original impedeix confirmar-la, però no sempre permet demostrar que siga falsa.</p></div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>20260905185818000069</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>4. Del tema a la pregunta</pageName>
+  <odeNavStructureOrder>3</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>4. Del tema a la pregunta</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>4. Del tema a la pregunta</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>20260905185818000069</odePageId>
+      <odeBlockId>202609051858180000CD</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>20260905185818000069</odePageId>
+          <odeBlockId>202609051858180000CD</odeBlockId>
+          <odeIdeviceId>20260905185818000131</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="meta"><span class="tag">Sessió 4</span><span class="tag">Disseny de la investigació</span><span class="tag">Individual + parella crítica</span></div><h2>Del tema a la pregunta</h2>
+<div class="repte"><strong>Objectiu:</strong> convertir un tema ampli en una pregunta viable, rellevant i investigable.</div>
+<h3>Del tema vague a la pregunta històrica</h3><table><tr><th>Tema massa ampli</th><th>Pregunta investigable</th></tr><tr><td>La industrialització</td><td>Com canviaren les condicions laborals a Riverton entre 1882 i 1892, segons fonts de naturalesa diferent?</td></tr><tr><td>Les dones a la fàbrica</td><td>Què permeten saber —i què silencien— els registres i testimonis sobre el treball femení?</td></tr><tr><td>El progrés</td><td>Com construïa l’empresa una imatge de progrés i en què diferia de l’experiència obrera?</td></tr></table>
+<h3>Criteris de qualitat</h3><ul><li>No es respon amb sí/no.</li><li>Delimita temps, espai i procés.</li><li>Permet contrastar almenys quatre fonts.</li><li>Demana explicar, comparar o valorar, no només copiar dades.</li></ul>
+<div class="fitxa"><p><strong>La meua pregunta:</strong></p><span class="linia"></span><span class="linia"></span><p><strong>Hipòtesi inicial:</strong></p><span class="linia"></span><span class="linia"></span><p><strong>Paraules clau i variants:</strong></p><span class="linia"></span><p><strong>Quatre fonts preliminars, de dos tipus diferents:</strong></p><span class="linia"></span><span class="linia"></span><span class="linia"></span></div>
+<div class="quiz" id="q4"><p><strong>Quina pregunta és més investigable?</strong></p><label><input type="radio" name="q4" value="0"> Va ser bona la industrialització?</label><label><input type="radio" name="q4" value="1"> Què és una fàbrica?</label><label><input type="radio" name="q4" value="2"> Com canviaren la jornada i el treball infantil entre 1882 i 1892, i quins límits tenen les dades?</label>
+    <button type="button" onclick="comprova('q4','2')">Comprova</button>
+    <button type="button" onclick="mostra('q4exp')">Explicació</button><p class="feedback" aria-live="polite"></p>
+    <p id="q4exp" hidden>Delimita variables i dates, i incorpora una mirada crítica sobre les proves.</p></div><div class="clau"><strong>Validació docent:</strong> no passes a la cerca definitiva fins que la pregunta siga viable.</div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000131","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 4</span><span class=\"tag\">Disseny de la investigació</span><span class=\"tag\">Individual + parella crítica</span></div><h2>Del tema a la pregunta</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> convertir un tema ampli en una pregunta viable, rellevant i investigable.</div>\n<h3>Del tema vague a la pregunta històrica</h3><table><tr><th>Tema massa ampli</th><th>Pregunta investigable</th></tr><tr><td>La industrialització</td><td>Com canviaren les condicions laborals a Riverton entre 1882 i 1892, segons fonts de naturalesa diferent?</td></tr><tr><td>Les dones a la fàbrica</td><td>Què permeten saber —i què silencien— els registres i testimonis sobre el treball femení?</td></tr><tr><td>El progrés</td><td>Com construïa l’empresa una imatge de progrés i en què diferia de l’experiència obrera?</td></tr></table>\n<h3>Criteris de qualitat</h3><ul><li>No es respon amb sí/no.</li><li>Delimita temps, espai i procés.</li><li>Permet contrastar almenys quatre fonts.</li><li>Demana explicar, comparar o valorar, no només copiar dades.</li></ul>\n<div class=\"fitxa\"><p><strong>La meua pregunta:</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><p><strong>Hipòtesi inicial:</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><p><strong>Paraules clau i variants:</strong></p><span class=\"linia\"></span><p><strong>Quatre fonts preliminars, de dos tipus diferents:</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span></div>\n<div class=\"quiz\" id=\"q4\"><p><strong>Quina pregunta és més investigable?</strong></p><label><input type=\"radio\" name=\"q4\" value=\"0\"> Va ser bona la industrialització?</label><label><input type=\"radio\" name=\"q4\" value=\"1\"> Què és una fàbrica?</label><label><input type=\"radio\" name=\"q4\" value=\"2\"> Com canviaren la jornada i el treball infantil entre 1882 i 1892, i quins límits tenen les dades?</label>\n    <button type=\"button\" onclick=\"comprova('q4','2')\">Comprova</button>\n    <button type=\"button\" onclick=\"mostra('q4exp')\">Explicació</button><p class=\"feedback\" aria-live=\"polite\"></p>\n    <p id=\"q4exp\" hidden>Delimita variables i dates, i incorpora una mirada crítica sobre les proves.</p></div><div class=\"clau\"><strong>Validació docent:</strong> no passes a la cerca definitiva fins que la pregunta siga viable.</div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>2026090518581800006A</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>5. Contrastar i contextualitzar</pageName>
+  <odeNavStructureOrder>4</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>5. Contrastar i contextualitzar</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>5. Contrastar i contextualitzar</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>2026090518581800006A</odePageId>
+      <odeBlockId>202609051858180000CE</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>2026090518581800006A</odePageId>
+          <odeBlockId>202609051858180000CE</odeBlockId>
+          <odeIdeviceId>20260905185818000132</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="meta"><span class="tag">Sessió 5</span><span class="tag">Investigació guiada</span><span class="tag">Tutoria curta</span></div><h2>Contrastar i contextualitzar</h2>
+<div class="repte"><strong>Objectiu:</strong> construir una matriu de contrast i relacionar cada font amb el seu context.</div>
+<h3>Matriu de contrast</h3><table><tr><th>Font</th><th>Què afirma?</th><th>Quina prova aporta?</th><th>Coincidències / contradiccions</th><th>Silencis i fiabilitat</th></tr><tr><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr></table>
+<h3>Context mínim necessari</h3><div class="grid"><div class="card"><h3>Temps</h3><p>Què canvia i què roman? Evita anacronismes.</p></div><div class="card"><h3>Espai</h3><p>On passa? És representatiu o un cas particular?</p></div><div class="card"><h3>Actors</h3><p>Qui parla? Qui no té veu?</p></div><div class="card"><h3>Conceptes</h3><p>Defineix termes amb el sentit de l’època.</p></div></div>
+<div class="fitxa"><p><strong>Esquema canvi–permanència o línia del temps:</strong></p><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span></div>
+<div class="quiz" id="q5"><p><strong>Dues fonts coincideixen. Això demostra automàticament que són independents?</strong></p><label><input type="radio" name="q5" value="0"> Sí</label><label><input type="radio" name="q5" value="1"> No; poden repetir la mateixa font o dependre l&#x27;una de l&#x27;altra</label><label><input type="radio" name="q5" value="2"> Sí, si estan en webs diferents</label>
+    <button type="button" onclick="comprova('q5','1')">Comprova</button>
+    <button type="button" onclick="mostra('q5exp')">Explicació</button><p class="feedback" aria-live="polite"></p>
+    <p id="q5exp" hidden>Cal rastrejar la procedència i comprovar que no siguen còpies de la mateixa informació.</p></div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000132","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 5</span><span class=\"tag\">Investigació guiada</span><span class=\"tag\">Tutoria curta</span></div><h2>Contrastar i contextualitzar</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> construir una matriu de contrast i relacionar cada font amb el seu context.</div>\n<h3>Matriu de contrast</h3><table><tr><th>Font</th><th>Què afirma?</th><th>Quina prova aporta?</th><th>Coincidències / contradiccions</th><th>Silencis i fiabilitat</th></tr><tr><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr></table>\n<h3>Context mínim necessari</h3><div class=\"grid\"><div class=\"card\"><h3>Temps</h3><p>Què canvia i què roman? Evita anacronismes.</p></div><div class=\"card\"><h3>Espai</h3><p>On passa? És representatiu o un cas particular?</p></div><div class=\"card\"><h3>Actors</h3><p>Qui parla? Qui no té veu?</p></div><div class=\"card\"><h3>Conceptes</h3><p>Defineix termes amb el sentit de l’època.</p></div></div>\n<div class=\"fitxa\"><p><strong>Esquema canvi–permanència o línia del temps:</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span></div>\n<div class=\"quiz\" id=\"q5\"><p><strong>Dues fonts coincideixen. Això demostra automàticament que són independents?</strong></p><label><input type=\"radio\" name=\"q5\" value=\"0\"> Sí</label><label><input type=\"radio\" name=\"q5\" value=\"1\"> No; poden repetir la mateixa font o dependre l&#x27;una de l&#x27;altra</label><label><input type=\"radio\" name=\"q5\" value=\"2\"> Sí, si estan en webs diferents</label>\n    <button type=\"button\" onclick=\"comprova('q5','1')\">Comprova</button>\n    <button type=\"button\" onclick=\"mostra('q5exp')\">Explicació</button><p class=\"feedback\" aria-live=\"polite\"></p>\n    <p id=\"q5exp\" hidden>Cal rastrejar la procedència i comprovar que no siguen còpies de la mateixa informació.</p></div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>2026090518581800006B</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>6. De les proves a l’explicació</pageName>
+  <odeNavStructureOrder>5</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>6. De les proves a l’explicació</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>6. De les proves a l’explicació</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>2026090518581800006B</odePageId>
+      <odeBlockId>202609051858180000CF</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>2026090518581800006B</odePageId>
+          <odeBlockId>202609051858180000CF</odeBlockId>
+          <odeIdeviceId>20260905185818000133</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="meta"><span class="tag">Sessió 6</span><span class="tag">Escriptura històrica</span><span class="tag">Individual</span></div><h2>De les proves a l’explicació</h2>
+<div class="repte"><strong>Objectiu:</strong> redactar una conclusió que connecte tesi, evidència, raonament i límits.</div>
+<h3>Estructura TERL</h3><table><tr><th>Element</th><th>Funció</th><th>Inici possible</th></tr><tr><td>Tesi</td><td>Resposta clara a la pregunta.</td><td>«Les fonts indiquen que…»</td></tr><tr><td>Evidència</td><td>Dada o fragment identificat i citat.</td><td>«El registre de 1892 mostra…»</td></tr><tr><td>Raonament</td><td>Explica per què la prova sosté la tesi.</td><td>«Això suggereix…, perquè…»</td></tr><tr><td>Límit</td><td>Acota la certesa i indica què falta.</td><td>«Tanmateix, aquesta font no permet…»</td></tr></table>
+<div class="alerta"><strong>No acumules cites:</strong> després de cada evidència, explica què prova i com respon a la pregunta.</div>
+<h3>Codi de revisió</h3><ul><li><strong>Blau:</strong> tesi.</li><li><strong>Verd:</strong> evidència i cita.</li><li><strong>Taronja:</strong> connexió o raonament.</li><li><strong>Violeta:</strong> matís, contradicció o límit.</li></ul>
+<div class="fitxa"><p><strong>Esborrany de conclusió (180–220 paraules):</strong></p><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span></div>
+<div class="quiz" id="q6"><p><strong>Quina frase conté raonament i no només evidència?</strong></p><label><input type="radio" name="q6" value="0"> El registre indica un 9% de menors el 1892.</label><label><input type="radio" name="q6" value="1"> La reducció del 18% al 9% suggereix un canvi, però no prova per si sola la causa.</label><label><input type="radio" name="q6" value="2"> Segons la font B.</label>
+    <button type="button" onclick="comprova('q6','1')">Comprova</button>
+    <button type="button" onclick="mostra('q6exp')">Explicació</button><p class="feedback" aria-live="polite"></p>
+    <p id="q6exp" hidden>Relaciona la dada amb una inferència proporcional i n&#x27;explicita el límit.</p></div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000133","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 6</span><span class=\"tag\">Escriptura històrica</span><span class=\"tag\">Individual</span></div><h2>De les proves a l’explicació</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> redactar una conclusió que connecte tesi, evidència, raonament i límits.</div>\n<h3>Estructura TERL</h3><table><tr><th>Element</th><th>Funció</th><th>Inici possible</th></tr><tr><td>Tesi</td><td>Resposta clara a la pregunta.</td><td>«Les fonts indiquen que…»</td></tr><tr><td>Evidència</td><td>Dada o fragment identificat i citat.</td><td>«El registre de 1892 mostra…»</td></tr><tr><td>Raonament</td><td>Explica per què la prova sosté la tesi.</td><td>«Això suggereix…, perquè…»</td></tr><tr><td>Límit</td><td>Acota la certesa i indica què falta.</td><td>«Tanmateix, aquesta font no permet…»</td></tr></table>\n<div class=\"alerta\"><strong>No acumules cites:</strong> després de cada evidència, explica què prova i com respon a la pregunta.</div>\n<h3>Codi de revisió</h3><ul><li><strong>Blau:</strong> tesi.</li><li><strong>Verd:</strong> evidència i cita.</li><li><strong>Taronja:</strong> connexió o raonament.</li><li><strong>Violeta:</strong> matís, contradicció o límit.</li></ul>\n<div class=\"fitxa\"><p><strong>Esborrany de conclusió (180–220 paraules):</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span></div>\n<div class=\"quiz\" id=\"q6\"><p><strong>Quina frase conté raonament i no només evidència?</strong></p><label><input type=\"radio\" name=\"q6\" value=\"0\"> El registre indica un 9% de menors el 1892.</label><label><input type=\"radio\" name=\"q6\" value=\"1\"> La reducció del 18% al 9% suggereix un canvi, però no prova per si sola la causa.</label><label><input type=\"radio\" name=\"q6\" value=\"2\"> Segons la font B.</label>\n    <button type=\"button\" onclick=\"comprova('q6','1')\">Comprova</button>\n    <button type=\"button\" onclick=\"mostra('q6exp')\">Explicació</button><p class=\"feedback\" aria-live=\"polite\"></p>\n    <p id=\"q6exp\" hidden>Relaciona la dada amb una inferència proporcional i n&#x27;explicita el límit.</p></div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>2026090518581800006C</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>7. Clínica de dossiers</pageName>
+  <odeNavStructureOrder>6</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>7. Clínica de dossiers</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>7. Clínica de dossiers</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>2026090518581800006C</odePageId>
+      <odeBlockId>202609051858180000D0</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>2026090518581800006C</odePageId>
+          <odeBlockId>202609051858180000D0</odeBlockId>
+          <odeIdeviceId>20260905185818000134</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="meta"><span class="tag">Sessió 7</span><span class="tag">Coavaluació i millora</span><span class="tag">Parelles</span></div><h2>Clínica de dossiers</h2>
+<div class="repte"><strong>Objectiu:</strong> aplicar la rúbrica, donar retroacció útil i elaborar una versió revisada.</div>
+<h3>Protocol: dues fortaleses i una pregunta</h3><ol><li>L’autor explica què vol demostrar.</li><li>La parella llig sense interrompre i marca evidències.</li><li>Formula dues fortaleses concretes.</li><li>Planteja una pregunta que ajude a millorar, no una ordre vaga.</li><li>L’autor decideix i anota tres canvis.</li></ol>
+<div class="fitxa"><p><strong>Fortalesa 1:</strong></p><span class="linia"></span><p><strong>Fortalesa 2:</strong></p><span class="linia"></span><p><strong>Pregunta de millora:</strong></p><span class="linia"></span><p><strong>Tres canvis que faré:</strong></p><span class="linia"></span><span class="linia"></span><span class="linia"></span></div>
+<h3>Control final</h3><ul><li>La pregunta apareix al principi i es respon al final.</li><li>Les fonts estan identificades i citades.</li><li>Distinc entre descripció i inferència.</li><li>Contraste coincidències i contradiccions.</li><li>Declare límits i preguntes pendents.</li><li>La bibliografia i els enllaços permeten localitzar les fonts.</li></ul>
+<div class="quiz" id="q7"><p><strong>Quina retroacció és més útil?</strong></p><label><input type="radio" name="q7" value="0"> Està bé.</label><label><input type="radio" name="q7" value="1"> Falten coses.</label><label><input type="radio" name="q7" value="2"> La tesi és clara; podries explicar per què la dada de 1892 sosté la teua conclusió?</label>
+    <button type="button" onclick="comprova('q7','2')">Comprova</button>
+    <button type="button" onclick="mostra('q7exp')">Explicació</button><p class="feedback" aria-live="polite"></p>
+    <p id="q7exp" hidden>És específica, connecta amb un criteri i obri una acció de millora.</p></div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000134","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 7</span><span class=\"tag\">Coavaluació i millora</span><span class=\"tag\">Parelles</span></div><h2>Clínica de dossiers</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> aplicar la rúbrica, donar retroacció útil i elaborar una versió revisada.</div>\n<h3>Protocol: dues fortaleses i una pregunta</h3><ol><li>L’autor explica què vol demostrar.</li><li>La parella llig sense interrompre i marca evidències.</li><li>Formula dues fortaleses concretes.</li><li>Planteja una pregunta que ajude a millorar, no una ordre vaga.</li><li>L’autor decideix i anota tres canvis.</li></ol>\n<div class=\"fitxa\"><p><strong>Fortalesa 1:</strong></p><span class=\"linia\"></span><p><strong>Fortalesa 2:</strong></p><span class=\"linia\"></span><p><strong>Pregunta de millora:</strong></p><span class=\"linia\"></span><p><strong>Tres canvis que faré:</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span></div>\n<h3>Control final</h3><ul><li>La pregunta apareix al principi i es respon al final.</li><li>Les fonts estan identificades i citades.</li><li>Distinc entre descripció i inferència.</li><li>Contraste coincidències i contradiccions.</li><li>Declare límits i preguntes pendents.</li><li>La bibliografia i els enllaços permeten localitzar les fonts.</li></ul>\n<div class=\"quiz\" id=\"q7\"><p><strong>Quina retroacció és més útil?</strong></p><label><input type=\"radio\" name=\"q7\" value=\"0\"> Està bé.</label><label><input type=\"radio\" name=\"q7\" value=\"1\"> Falten coses.</label><label><input type=\"radio\" name=\"q7\" value=\"2\"> La tesi és clara; podries explicar per què la dada de 1892 sosté la teua conclusió?</label>\n    <button type=\"button\" onclick=\"comprova('q7','2')\">Comprova</button>\n    <button type=\"button\" onclick=\"mostra('q7exp')\">Explicació</button><p class=\"feedback\" aria-live=\"polite\"></p>\n    <p id=\"q7exp\" hidden>És específica, connecta amb un criteri i obri una acció de millora.</p></div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>2026090518581800006D</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>8. Conclusions provisionals</pageName>
+  <odeNavStructureOrder>7</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>8. Conclusions provisionals</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>8. Conclusions provisionals</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>2026090518581800006D</odePageId>
+      <odeBlockId>202609051858180000D1</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>2026090518581800006D</odePageId>
+          <odeBlockId>202609051858180000D1</odeBlockId>
+          <odeIdeviceId>20260905185818000135</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="meta"><span class="tag">Sessió 8</span><span class="tag">Transferència i avaluació</span><span class="tag">Individual + grup classe</span></div><h2>Conclusions provisionals</h2>
+<div class="repte"><strong>Objectiu:</strong> defensar una explicació històrica, respondre preguntes i revisar la pròpia hipòtesi.</div>
+<h3>Defensa oral · 90 segons</h3><ol><li><strong>15 s:</strong> pregunta i hipòtesi inicial.</li><li><strong>45 s:</strong> dues proves decisives i com es relacionen.</li><li><strong>20 s:</strong> conclusió i canvi respecte de la hipòtesi.</li><li><strong>10 s:</strong> límit o pregunta oberta.</li></ol>
+<div class="fitxa"><p><strong>Guió de la defensa:</strong></p><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span><span class="linia"></span></div>
+<h3>Prova de transferència</h3><div class="font"><strong>Font nova:</strong> «La fàbrica no era només una màquina de producció; imposava horaris, disciplina i una nova manera d’organitzar la vida quotidiana.» (síntesi didàctica).</div><ol><li>Quina tesi formula?</li><li>Quines fonts de les sessions 2–5 podrien donar-li suport?</li><li>Quina font podria matisar-la?</li><li>Quin límit té aquesta síntesi?</li></ol>
+<div class="fitxa"><p><strong>Autoavaluació:</strong> què ha canviat de la meua hipòtesi i per què?</p><span class="linia"></span><span class="linia"></span><span class="linia"></span><p><strong>Semàfor:</strong> □ puc fer-ho amb autonomia · □ necessite una pauta · □ necessite modelatge.</p></div>
+<div class="quiz" id="q8"><p><strong>Una conclusió històrica rigorosa és…</strong></p><label><input type="radio" name="q8" value="0"> Definitiva i independent de les fonts</label><label><input type="radio" name="q8" value="1"> Provisional, argumentada i revisable si apareixen noves proves</label><label><input type="radio" name="q8" value="2"> Una opinió personal ben escrita</label>
+    <button type="button" onclick="comprova('q8','1')">Comprova</button>
+    <button type="button" onclick="mostra('q8exp')">Explicació</button><p class="feedback" aria-live="polite"></p>
+    <p id="q8exp" hidden>El coneixement històric es justifica amb proves i pot revisar-se.</p></div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000135","textTextarea":"<div class=\"sa\">\n<div class=\"meta\"><span class=\"tag\">Sessió 8</span><span class=\"tag\">Transferència i avaluació</span><span class=\"tag\">Individual + grup classe</span></div><h2>Conclusions provisionals</h2>\n<div class=\"repte\"><strong>Objectiu:</strong> defensar una explicació històrica, respondre preguntes i revisar la pròpia hipòtesi.</div>\n<h3>Defensa oral · 90 segons</h3><ol><li><strong>15 s:</strong> pregunta i hipòtesi inicial.</li><li><strong>45 s:</strong> dues proves decisives i com es relacionen.</li><li><strong>20 s:</strong> conclusió i canvi respecte de la hipòtesi.</li><li><strong>10 s:</strong> límit o pregunta oberta.</li></ol>\n<div class=\"fitxa\"><p><strong>Guió de la defensa:</strong></p><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span></div>\n<h3>Prova de transferència</h3><div class=\"font\"><strong>Font nova:</strong> «La fàbrica no era només una màquina de producció; imposava horaris, disciplina i una nova manera d’organitzar la vida quotidiana.» (síntesi didàctica).</div><ol><li>Quina tesi formula?</li><li>Quines fonts de les sessions 2–5 podrien donar-li suport?</li><li>Quina font podria matisar-la?</li><li>Quin límit té aquesta síntesi?</li></ol>\n<div class=\"fitxa\"><p><strong>Autoavaluació:</strong> què ha canviat de la meua hipòtesi i per què?</p><span class=\"linia\"></span><span class=\"linia\"></span><span class=\"linia\"></span><p><strong>Semàfor:</strong> □ puc fer-ho amb autonomia · □ necessite una pauta · □ necessite modelatge.</p></div>\n<div class=\"quiz\" id=\"q8\"><p><strong>Una conclusió històrica rigorosa és…</strong></p><label><input type=\"radio\" name=\"q8\" value=\"0\"> Definitiva i independent de les fonts</label><label><input type=\"radio\" name=\"q8\" value=\"1\"> Provisional, argumentada i revisable si apareixen noves proves</label><label><input type=\"radio\" name=\"q8\" value=\"2\"> Una opinió personal ben escrita</label>\n    <button type=\"button\" onclick=\"comprova('q8','1')\">Comprova</button>\n    <button type=\"button\" onclick=\"mostra('q8exp')\">Explicació</button><p class=\"feedback\" aria-live=\"polite\"></p>\n    <p id=\"q8exp\" hidden>El coneixement històric es justifica amb proves i pot revisar-se.</p></div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>2026090518581800006E</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>Dossier d’investigació</pageName>
+  <odeNavStructureOrder>8</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Dossier d’investigació</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Dossier d’investigació</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>2026090518581800006E</odePageId>
+      <odeBlockId>202609051858180000D2</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>2026090518581800006E</odePageId>
+          <odeBlockId>202609051858180000D2</odeBlockId>
+          <odeIdeviceId>20260905185818000136</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<h2>Plantilla del dossier final</h2><div class="clau"><strong>Extensió orientativa:</strong> 800–1.000 paraules, més bibliografia i annexos. Lliurament individual.</div>
+<ol><li><strong>Títol i pregunta investigable.</strong></li><li><strong>Hipòtesi inicial.</strong> Resposta provisional i justificació.</li><li><strong>Context.</strong> Temps, espai, actors i conceptes imprescindibles.</li><li><strong>Anàlisi de quatre fonts.</strong> Almenys dos tipus diferents; autoria, data, contingut, finalitat, utilitat i límits.</li><li><strong>Contrast.</strong> Coincidències, contradiccions, silencis i dependències.</li><li><strong>Conclusió.</strong> Tesi, evidències, raonament, matisos i límits.</li><li><strong>Bibliografia/webgrafia.</strong> Autoria, títol, institució, data i URL/data de consulta.</li></ol>
+<h3>Registre de fonts</h3><table><tr><th>Núm.</th><th>Referència completa</th><th>Tipus</th><th>Per a què la utilitze?</th><th>Límit</th></tr><tr><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td></td><td></td></tr></table>
+<h3>Declaració d’ús responsable de la IA</h3><p>Si has utilitzat una eina d’IA, indica per a quina funció, conserva les instruccions principals i explica com has verificat la informació. La IA no substitueix les fonts ni pot aparéixer com a prova històrica.</p>
+<p>□ No n’he utilitzat. □ L’he utilitzada per a: ____________________. He verificat el resultat mitjançant: ____________________.</p></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000136","textTextarea":"<div class=\"sa\">\n<h2>Plantilla del dossier final</h2><div class=\"clau\"><strong>Extensió orientativa:</strong> 800–1.000 paraules, més bibliografia i annexos. Lliurament individual.</div>\n<ol><li><strong>Títol i pregunta investigable.</strong></li><li><strong>Hipòtesi inicial.</strong> Resposta provisional i justificació.</li><li><strong>Context.</strong> Temps, espai, actors i conceptes imprescindibles.</li><li><strong>Anàlisi de quatre fonts.</strong> Almenys dos tipus diferents; autoria, data, contingut, finalitat, utilitat i límits.</li><li><strong>Contrast.</strong> Coincidències, contradiccions, silencis i dependències.</li><li><strong>Conclusió.</strong> Tesi, evidències, raonament, matisos i límits.</li><li><strong>Bibliografia/webgrafia.</strong> Autoria, títol, institució, data i URL/data de consulta.</li></ol>\n<h3>Registre de fonts</h3><table><tr><th>Núm.</th><th>Referència completa</th><th>Tipus</th><th>Per a què la utilitze?</th><th>Límit</th></tr><tr><td>1</td><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td></td><td></td><td></td><td></td></tr></table>\n<h3>Declaració d’ús responsable de la IA</h3><p>Si has utilitzat una eina d’IA, indica per a quina funció, conserva les instruccions principals i explica com has verificat la informació. La IA no substitueix les fonts ni pot aparéixer com a prova històrica.</p>\n<p>□ No n’he utilitzat. □ L’he utilitzada per a: ____________________. He verificat el resultat mitjançant: ____________________.</p></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>2026090518581800006F</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>Avaluació</pageName>
+  <odeNavStructureOrder>9</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Avaluació</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Avaluació</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>2026090518581800006F</odePageId>
+      <odeBlockId>202609051858180000D3</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>2026090518581800006F</odePageId>
+          <odeBlockId>202609051858180000D3</odeBlockId>
+          <odeIdeviceId>20260905185818000137</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<h2>Avaluació del producte final</h2><table class="rubrica"><tr><th>Criteri</th><th>4 · Avançat</th><th>3 · Adequat</th><th>2 · Bàsic</th><th>1 · Inicial</th></tr>
+<tr><td>Pregunta i context</td><td>Pregunta precisa; context rellevant i ben connectat.</td><td>Pregunta viable i context suficient.</td><td>Delimitació parcial o context genèric.</td><td>Pregunta descriptiva o context absent.</td></tr>
+<tr><td>Anàlisi de fonts</td><td>Analitza autoria, finalitat, utilitat i límits amb precisió.</td><td>Analitza correctament els elements principals.</td><td>Predomina la descripció; límits poc justificats.</td><td>Copia informació sense analitzar-la.</td></tr>
+<tr><td>Contrast i verificació</td><td>Triangula fonts independents i explica contradiccions.</td><td>Contrasta fonts i detecta coincidències.</td><td>Contrast superficial o poc documentat.</td><td>Accepta les fonts sense contrast.</td></tr>
+<tr><td>Argumentació</td><td>Tesi clara; proves integrades; raonament i matisos sòlids.</td><td>Tesi i proves coherents amb alguna connexió explícita.</td><td>Hi ha proves, però la connexió és feble.</td><td>Opinions sense proves suficients.</td></tr>
+<tr><td>Comunicació i citació</td><td>Text molt clar, vocabulari històric precís i cites completes.</td><td>Expressió clara i referències localitzables.</td><td>Errors o cites incompletes que dificulten la lectura.</td><td>Presentació deficient o fonts no identificables.</td></tr></table>
+<h3>Evidències de la SA</h3><ul><li>Tickets de les sessions 1 i 2.</li><li>Fitxes d’anàlisi i verificació.</li><li>Pregunta i pla de cerca validats.</li><li>Matriu de contrast.</li><li>Esborrany i coavaluació.</li><li>Dossier final, defensa oral i prova individual de transferència.</li></ul>
+<div class="alerta"><strong>Recorda:</strong> les activitats autocorrectives d’aquest recurs ofereixen retroacció immediata, però l’avaluació curricular es realitza amb les evidències i instruments indicats.</div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000137","textTextarea":"<div class=\"sa\">\n<h2>Avaluació del producte final</h2><table class=\"rubrica\"><tr><th>Criteri</th><th>4 · Avançat</th><th>3 · Adequat</th><th>2 · Bàsic</th><th>1 · Inicial</th></tr>\n<tr><td>Pregunta i context</td><td>Pregunta precisa; context rellevant i ben connectat.</td><td>Pregunta viable i context suficient.</td><td>Delimitació parcial o context genèric.</td><td>Pregunta descriptiva o context absent.</td></tr>\n<tr><td>Anàlisi de fonts</td><td>Analitza autoria, finalitat, utilitat i límits amb precisió.</td><td>Analitza correctament els elements principals.</td><td>Predomina la descripció; límits poc justificats.</td><td>Copia informació sense analitzar-la.</td></tr>\n<tr><td>Contrast i verificació</td><td>Triangula fonts independents i explica contradiccions.</td><td>Contrasta fonts i detecta coincidències.</td><td>Contrast superficial o poc documentat.</td><td>Accepta les fonts sense contrast.</td></tr>\n<tr><td>Argumentació</td><td>Tesi clara; proves integrades; raonament i matisos sòlids.</td><td>Tesi i proves coherents amb alguna connexió explícita.</td><td>Hi ha proves, però la connexió és feble.</td><td>Opinions sense proves suficients.</td></tr>\n<tr><td>Comunicació i citació</td><td>Text molt clar, vocabulari històric precís i cites completes.</td><td>Expressió clara i referències localitzables.</td><td>Errors o cites incompletes que dificulten la lectura.</td><td>Presentació deficient o fonts no identificables.</td></tr></table>\n<h3>Evidències de la SA</h3><ul><li>Tickets de les sessions 1 i 2.</li><li>Fitxes d’anàlisi i verificació.</li><li>Pregunta i pla de cerca validats.</li><li>Matriu de contrast.</li><li>Esborrany i coavaluació.</li><li>Dossier final, defensa oral i prova individual de transferència.</li></ul>\n<div class=\"alerta\"><strong>Recorda:</strong> les activitats autocorrectives d’aquest recurs ofereixen retroacció immediata, però l’avaluació curricular es realitza amb les evidències i instruments indicats.</div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>20260905185818000070</odePageId>
+  <odeParentPageId>20260905185818000001</odeParentPageId>
+  <pageName>Guia docent</pageName>
+  <odeNavStructureOrder>10</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Guia docent</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>Guia docent</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>20260905185818000070</odePageId>
+      <odeBlockId>202609051858180000D4</odeBlockId>
+      <blockName>Contingut</blockName>
+      <iconName></iconName>
+      <odePagStructureOrder>1</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>20260905185818000070</odePageId>
+          <odeBlockId>202609051858180000D4</odeBlockId>
+          <odeIdeviceId>20260905185818000138</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<div class="exe-text-template"><div class="textIdeviceContent"><div class="exe-text-activity"><div><div class="sa">
+<div class="docent"><h2>Guia docent · SA01</h2><p>Aquesta pàgina està marcada com a material docent.</p>
+<h3>Temporalització</h3><table><tr><th>Sessió</th><th>Fase</th><th>Agrupament</th><th>Evidència</th></tr><tr><td>1</td><td>Activació i diagnòstic</td><td>Individual → parelles → grup</td><td>Ticket diagnòstic</td></tr><tr><td>2</td><td>Modelatge i taller</td><td>Equips de 4</td><td>Fitxes de fonts</td></tr><tr><td>3</td><td>Alfabetització digital</td><td>Parelles</td><td>Microcasos SALTA</td></tr><tr><td>4</td><td>Disseny de la investigació</td><td>Individual + parella crítica</td><td>Pla validat</td></tr><tr><td>5</td><td>Investigació guiada</td><td>Individual + consulta</td><td>Matriu de contrast</td></tr><tr><td>6</td><td>Escriptura històrica</td><td>Individual</td><td>Esborrany</td></tr><tr><td>7</td><td>Coavaluació</td><td>Parelles</td><td>Full de revisió</td></tr><tr><td>8</td><td>Transferència i avaluació</td><td>Individual + grup</td><td>Dossier, defensa i prova</td></tr></table>
+<h3>Respostes de les activitats autocorrectives</h3><p>S1: opció 2 · S2: opció 2 · S3: opció 2 · S4: opció 3 · S5: opció 2 · S6: opció 2 · S7: opció 3 · S8: opció 2.</p>
+<h3>Documents incorporats</h3><p><a class="btn" href="{{context_path}}/content/resources/SA01_Sessio_1_Un_mateix_passat_dos_relats.docx">Sessió 1 · material docent (Word)</a> <a class="btn" href="{{context_path}}/content/resources/SA01_Sessions_2_i_3_Material_docent.docx">Sessions 2 i 3 · material docent (Word)</a></p>
+<h3>Ús en Moodle</h3><ol><li>Obri el fitxer en eXeLearning 3.</li><li>Revisa dades, terminis i criteris segons el grup.</li><li>Exporta com a SCORM 1.2 si vols seguiment de compleció, o com a lloc web/IMS si només vols consulta.</li><li>Les activitats HTML donen retroacció immediata, però no envien nota al llibre de qualificacions; crea una tasca Moodle per al dossier i, si convé, un qüestionari Moodle qualificable.</li></ol>
+<div class="alerta"><strong>Fonts simulades:</strong> Riverton, el reglament, el registre, el cartell i el testimoni són materials didàctics ficticis. No s’han de presentar com a fonts històriques reals.</div></div></div><script>
+function comprova(id,answer){
+ const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');
+ if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}
+ const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');
+}
+function mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}
+</script></div></div></div></div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20260905185818000138","textTextarea":"<div class=\"sa\">\n<div class=\"docent\"><h2>Guia docent · SA01</h2><p>Aquesta pàgina està marcada com a material docent.</p>\n<h3>Temporalització</h3><table><tr><th>Sessió</th><th>Fase</th><th>Agrupament</th><th>Evidència</th></tr><tr><td>1</td><td>Activació i diagnòstic</td><td>Individual → parelles → grup</td><td>Ticket diagnòstic</td></tr><tr><td>2</td><td>Modelatge i taller</td><td>Equips de 4</td><td>Fitxes de fonts</td></tr><tr><td>3</td><td>Alfabetització digital</td><td>Parelles</td><td>Microcasos SALTA</td></tr><tr><td>4</td><td>Disseny de la investigació</td><td>Individual + parella crítica</td><td>Pla validat</td></tr><tr><td>5</td><td>Investigació guiada</td><td>Individual + consulta</td><td>Matriu de contrast</td></tr><tr><td>6</td><td>Escriptura històrica</td><td>Individual</td><td>Esborrany</td></tr><tr><td>7</td><td>Coavaluació</td><td>Parelles</td><td>Full de revisió</td></tr><tr><td>8</td><td>Transferència i avaluació</td><td>Individual + grup</td><td>Dossier, defensa i prova</td></tr></table>\n<h3>Respostes de les activitats autocorrectives</h3><p>S1: opció 2 · S2: opció 2 · S3: opció 2 · S4: opció 3 · S5: opció 2 · S6: opció 2 · S7: opció 3 · S8: opció 2.</p>\n<h3>Documents incorporats</h3><p><a class=\"btn\" href=\"{{context_path}}/content/resources/SA01_Sessio_1_Un_mateix_passat_dos_relats.docx\">Sessió 1 · material docent (Word)</a> <a class=\"btn\" href=\"{{context_path}}/content/resources/SA01_Sessions_2_i_3_Material_docent.docx\">Sessions 2 i 3 · material docent (Word)</a></p>\n<h3>Ús en Moodle</h3><ol><li>Obri el fitxer en eXeLearning 3.</li><li>Revisa dades, terminis i criteris segons el grup.</li><li>Exporta com a SCORM 1.2 si vols seguiment de compleció, o com a lloc web/IMS si només vols consulta.</li><li>Les activitats HTML donen retroacció immediata, però no envien nota al llibre de qualificacions; crea una tasca Moodle per al dossier i, si convé, un qüestionari Moodle qualificable.</li></ol>\n<div class=\"alerta\"><strong>Fonts simulades:</strong> Riverton, el reglament, el registre, el cartell i el testimoni són materials didàctics ficticis. No s’han de presentar com a fonts històriques reals.</div></div></div><script>\nfunction comprova(id,answer){\n const box=document.getElementById(id), chosen=box.querySelector('input:checked'), out=box.querySelector('.feedback');\n if(!chosen){out.textContent='Selecciona una resposta.';out.className='feedback ko';return}\n const ok=chosen.value===answer;out.textContent=ok?'Correcte. Continua!':'Encara no. Revisa la font i torna-ho a provar.';out.className='feedback '+(ok?'ok':'ko');\n}\nfunction mostra(id){const x=document.getElementById(id);x.hidden=!x.hidden}\n</script>","textFeedbackInput":"Mostra la retroacció","textFeedbackTextarea":"","textInfoDurationInput":"","textInfoDurationTextInput":"Duració","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupament"}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+</odeNavStructures>
+</ode>
